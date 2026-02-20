@@ -1,0 +1,34 @@
+{
+    "model_name": {
+        "description": "Tagger 模型名称",
+        "type": "list",
+        "default": "SmilingWolf/wd-eva02-large-tagger-v3",
+        "options": [
+            "SmilingWolf/wd-eva02-large-tagger-v3",
+            "SmilingWolf/wd-swinv2-tagger-v3",
+            "SmilingWolf/wd-convnext-tagger-v3",
+            "SmilingWolf/wd-vit-tagger-v3",
+            "SmilingWolf/wd-vit-large-tagger-v3",
+            "SmilingWolf/wd-v1-4-moat-tagger-v2",
+            "SmilingWolf/wd-v1-4-swinv2-tagger-v2",
+            "SmilingWolf/wd-v1-4-convnext-tagger-v2",
+            "SmilingWolf/wd-v1-4-convnextv2-tagger-v2",
+            "SmilingWolf/wd-v1-4-vit-tagger-v2",
+            "deepghs/idolsankaku-swinv2-tagger-v1",
+            "deepghs/idolsankaku-eva02-large-tagger-v1"
+        ],
+        "hint": "选择用于识别图像标签的模型"
+    },
+    "general_threshold": {
+        "description": "一般标签阈值（0-1之间的小数）",
+        "type": "float",
+        "default": 0.35,
+        "hint": "置信度高于此阈值的标签才会被识别，值越低识别的标签越多但可能不准确"
+    },
+    "character_threshold": {
+        "description": "角色识别阈值（0-1之间的小数）",
+        "type": "float",
+        "default": 0.85,
+        "hint": "角色识别的置信度阈值，值越低识别到的角色越多但可能不准确"
+    }
+}
